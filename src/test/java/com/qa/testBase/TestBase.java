@@ -22,6 +22,7 @@ public class TestBase {
 	public static Properties config= new Properties();                                
 	public static Properties OR= new Properties();
 	public static FileInputStream fis;
+	public static WebDriverWait wait;
 
 
 
@@ -55,21 +56,20 @@ public class TestBase {
 			
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),TimeUnit.SECONDS);
-			
+			wait= new WebDriverWait(driver,10);
+
 			} 
 		}
 		
-		@AfterSuite
-		public void tearDown() {
-			if(driver!=null) {
-			driver.quit();
-			
-		}
-			
+		/*
+		 * @AfterSuite public void tearDown() { if(driver!=null) { driver.quit();
+		 * 
+		 * }
+		 */	
 			
 	
 		
-}
+//}
 		
 		
 		public boolean isPresent(By by) {

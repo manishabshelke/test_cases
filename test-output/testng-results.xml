@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5203" started-at="2021-04-13T14:02:03 IST" finished-at="2021-04-13T14:02:08 IST">
+  <suite name="RelativeXpathBasic" duration-ms="37153" started-at="2021-04-15T11:52:44 IST" finished-at="2021-04-15T11:53:21 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5203" started-at="2021-04-13T14:02:03 IST" finished-at="2021-04-13T14:02:08 IST">
+    <test name="BankManagerLoginTest" duration-ms="5403" started-at="2021-04-15T11:52:44 IST" finished-at="2021-04-15T11:52:49 IST">
       <class name="com.qa.testcases.BankManagerLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.BankManagerLoginTest@58c1670b]" name="setUp" is-config="true" duration-ms="11535" started-at="2021-04-13T14:01:51 IST" finished-at="2021-04-13T14:02:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bankManagerLoginTest()[pri:0, instance:com.qa.testcases.BankManagerLoginTest@58c1670b]" name="bankManagerLoginTest" duration-ms="5155" started-at="2021-04-13T14:02:03 IST" finished-at="2021-04-13T14:02:08 IST">
+        <test-method status="PASS" signature="bankManagerLoginTest()[pri:0, instance:com.qa.testcases.BankManagerLoginTest@6b57696f]" name="bankManagerLoginTest" duration-ms="5301" started-at="2021-04-15T11:52:44 IST" finished-at="2021-04-15T11:52:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bankManagerLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.BankManagerLoginTest@58c1670b]" name="tearDown" is-config="true" duration-ms="899" started-at="2021-04-13T14:02:08 IST" finished-at="2021-04-13T14:02:09 IST">
+      </class> <!-- com.qa.testcases.BankManagerLoginTest -->
+    </test> <!-- BankManagerLoginTest -->
+    <test name="AddCustomerTest" duration-ms="5087" started-at="2021-04-15T11:52:49 IST" finished-at="2021-04-15T11:52:54 IST">
+      <class name="com.qa.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="addCustomerTest()[pri:0, instance:com.qa.testcases.AddCustomerTest@ed9d034]" name="addCustomerTest" duration-ms="5077" started-at="2021-04-15T11:52:49 IST" finished-at="2021-04-15T11:52:54 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testcases.BankManagerLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- addCustomerTest -->
+      </class> <!-- com.qa.testcases.AddCustomerTest -->
+    </test> <!-- AddCustomerTest -->
+    <test name="OpenAccountTest" duration-ms="7966" started-at="2021-04-15T11:52:55 IST" finished-at="2021-04-15T11:53:03 IST">
+      <class name="com.qa.testcases.OpenAccountTest">
+        <test-method status="PASS" signature="openAccountTest()[pri:0, instance:com.qa.testcases.OpenAccountTest@11758f2a]" name="openAccountTest" duration-ms="7956" started-at="2021-04-15T11:52:55 IST" finished-at="2021-04-15T11:53:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+      </class> <!-- com.qa.testcases.OpenAccountTest -->
+    </test> <!-- OpenAccountTest -->
+    <test name="VerifyCustList" duration-ms="2582" started-at="2021-04-15T11:53:03 IST" finished-at="2021-04-15T11:53:05 IST">
+      <class name="com.qa.testcases.VerifyCustList">
+        <test-method status="PASS" signature="isCustInList()[pri:0, instance:com.qa.testcases.VerifyCustList@757942a1]" name="isCustInList" duration-ms="2566" started-at="2021-04-15T11:53:03 IST" finished-at="2021-04-15T11:53:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isCustInList -->
+      </class> <!-- com.qa.testcases.VerifyCustList -->
+    </test> <!-- VerifyCustList -->
+    <test name="CustomerLogin" duration-ms="4726" started-at="2021-04-15T11:53:05 IST" finished-at="2021-04-15T11:53:10 IST">
+      <class name="com.qa.testcases.CustomerLogin">
+        <test-method status="PASS" signature="CustloginApp()[pri:0, instance:com.qa.testcases.CustomerLogin@b7dd107]" name="CustloginApp" duration-ms="4720" started-at="2021-04-15T11:53:05 IST" finished-at="2021-04-15T11:53:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustloginApp -->
+      </class> <!-- com.qa.testcases.CustomerLogin -->
+    </test> <!-- CustomerLogin -->
+    <test name="DopositAmount" duration-ms="472" started-at="2021-04-15T11:53:10 IST" finished-at="2021-04-15T11:53:10 IST">
+      <class name="com.qa.testcases.DopositAmount">
+        <test-method status="PASS" signature="DepositAmt()[pri:0, instance:com.qa.testcases.DopositAmount@33723e30]" name="DepositAmt" duration-ms="466" started-at="2021-04-15T11:53:10 IST" finished-at="2021-04-15T11:53:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositAmt -->
+      </class> <!-- com.qa.testcases.DopositAmount -->
+    </test> <!-- DopositAmount -->
+    <test name="withdrawlAmount" duration-ms="10369" started-at="2021-04-15T11:53:10 IST" finished-at="2021-04-15T11:53:21 IST">
+      <class name="com.qa.testcases.withdrawlAmount">
+        <test-method status="PASS" signature="withdrawlAmt()[pri:0, instance:com.qa.testcases.withdrawlAmount@32eebfca]" name="withdrawlAmt" duration-ms="10365" started-at="2021-04-15T11:53:10 IST" finished-at="2021-04-15T11:53:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withdrawlAmt -->
+      </class> <!-- com.qa.testcases.withdrawlAmount -->
+    </test> <!-- withdrawlAmount -->
+    <test name="LogOutCustomer" duration-ms="162" started-at="2021-04-15T11:53:21 IST" finished-at="2021-04-15T11:53:21 IST">
+      <class name="com.qa.testcases.LogOutCustomer">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.LogOutCustomer@75881071]" name="setUp" is-config="true" duration-ms="12891" started-at="2021-04-15T11:52:31 IST" finished-at="2021-04-15T11:52:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logoutApp()[pri:0, instance:com.qa.testcases.LogOutCustomer@75881071]" name="logoutApp" duration-ms="157" started-at="2021-04-15T11:53:21 IST" finished-at="2021-04-15T11:53:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutApp -->
+      </class> <!-- com.qa.testcases.LogOutCustomer -->
+    </test> <!-- LogOutCustomer -->
+  </suite> <!-- RelativeXpathBasic -->
 </testng-results>

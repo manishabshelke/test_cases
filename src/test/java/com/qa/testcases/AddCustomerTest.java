@@ -1,6 +1,7 @@
 package com.qa.testcases;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,24 +12,24 @@ public class AddCustomerTest extends TestBase
 {
 	
 	@Test
-	public void  addCustomerTest(String fristName, String lastName, int postCode) throws InterruptedException{
+	public void  addCustomerTest() throws InterruptedException{
 		
-		if(!data.get("Runmode").equalsIgnoreCase("Y")) {
-			
-			throw new SkipException("Skipping the test as the runmode is no");
-		}
-		click("addcustbtn_CSS");
-		type("fristname_CSS", data.get("fristName"));
-		type("lastname_CSS",data.get("lastName"));
-		type("postCode_CSS",data.get("postCode"));
-		click("addbtn_CSS");
-		Thread.sleep(2000);
+		driver.findElement(By.xpath(OR.getProperty("AddCustomer"))).click();
+		driver.findElement(By.xpath(OR.getProperty("FName"))).sendKeys("Manisha");
+		driver.findElement(By.xpath(OR.getProperty("LName"))).sendKeys("Gaikwad");
+		driver.findElement(By.xpath(OR.getProperty("Pincode"))).sendKeys("431716");
+		driver.findElement(By.xpath(OR.getProperty("Addbtn"))).click();
 		
-	   Alert alert= wait.until(ExpectedConditions.alertIsPresent());
-      Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
-	  alert.accept();
-       Thread.sleep(2000);
-	
+		 Thread.sleep(2000);
+		
+		  Alert alert= wait.until(ExpectedConditions.alertIsPresent());
+		 Thread.sleep(2000);
+		   System.out.println(alert.getText());
+		   //Thread.sleep(2000);
+		      Assert.assertTrue(alert.getText().contains("Customer added successfully"));
+			  alert.accept();
+			  
+
 	
 		
 	} 
