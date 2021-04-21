@@ -1,6 +1,7 @@
 package com.qa.testcases;
 
 import org.openqa.selenium.By;
+import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,17 +13,14 @@ public class BankManagerLoginTest extends TestBase{
 	@Test
 	public void bankManagerLoginTest() throws InterruptedException {
 		
-	driver.findElement(By.xpath(OR.getProperty("BankManagerLogin"))).click();
+	driver.findElement(withTagName("button").below(By.xpath("//button[text()='Customer Login']"))).click();
 	
-	Thread.sleep(2000);
+
 	//driver.findElement(By.xpath(OR.getProperty("AddCustomer"))).click();
-	boolean isAddCustomerbtn=isPresent(By.xpath(OR.getProperty("AddCustomer")));
+	boolean isAddCustomerbtn=isPresent(withTagName("button").toRightOf(By.xpath(OR.getProperty("OpenAccount"))));
 		Assert.assertTrue(isAddCustomerbtn);
-		Thread.sleep(3000);
+;
 		
-	
-		
-	
 	}
 
 

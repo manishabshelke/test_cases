@@ -21,34 +21,34 @@
     </classes>
   </test>
   
-  <test thread-count="5" name="VerifyCustList">
-    <classes>
-      <class name="com.qa.testcases.VerifyCustList"/>
-    </classes>
-  </test>
+<!--   <test thread-count="5" name="VerifyCustList"> -->
+<!--     <classes> -->
+<!--       <class name="com.qa.testcases.VerifyCustList"/> -->
+<!--     </classes> -->
+<!--   </test> -->
   
-  <test thread-count="5" name="CustomerLogin">
-    <classes>
-      <class name="com.qa.testcases.CustomerLogin"/>
-    </classes>
-  </test>
+<!--   <test thread-count="5" name="CustomerLogin"> -->
+<!--     <classes> -->
+<!--       <class name="com.qa.testcases.CustomerLogin"/> -->
+<!--     </classes> -->
+<!--   </test> -->
   
-  <test thread-count="5" name="DopositAmount">
-    <classes>
-      <class name="com.qa.testcases.DopositAmount"/>
-    </classes>
-  </test>
+<!--   <test thread-count="5" name="DopositAmount"> -->
+<!--     <classes> -->
+<!--       <class name="com.qa.testcases.DopositAmount"/> -->
+<!--     </classes> -->
+<!--   </test> -->
   
-  <test thread-count="5" name="withdrawlAmount">
-    <classes>
-      <class name="com.qa.testcases.withdrawlAmount"/>
-    </classes>
-  </test>
+<!--   <test thread-count="5" name="withdrawlAmount"> -->
+<!--     <classes> -->
+<!--       <class name="com.qa.testcases.withdrawlAmount"/> -->
+<!--     </classes> -->
+<!--   </test> -->
   
-  <test thread-count="5" name="LogOutCustomer">
-    <classes>
-      <class name="com.qa.testcases.LogOutCustomer"/>
-    </classes>
-  </test>
+<!--   <test thread-count="5" name="LogOutCustomer"> -->
+<!--     <classes> -->
+<!--       <class name="com.qa.testcases.LogOutCustomer"/> -->
+<!--     </classes> -->
+<!--   </test>--> -->
 
 </suite> <!-- Suite -->

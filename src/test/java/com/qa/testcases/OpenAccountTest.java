@@ -20,15 +20,10 @@ public class OpenAccountTest extends TestBase {
 		driver.findElement(By.xpath(OR.getProperty("OpenAccount"))).click();
 		
 		WebElement custList=driver.findElement(By.xpath(OR.getProperty("Customer")));
-		Thread.sleep(2000);
-		
-		
+	
 		Select select=new Select(custList);
 		select.selectByVisibleText("Manisha Gaikwad");
 
-	
-
-		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath(OR.getProperty("Currency"))).click();
 		Select selectCurrency = new Select(driver.findElement(By.xpath(OR.getProperty("Currency"))));
@@ -37,12 +32,11 @@ public class OpenAccountTest extends TestBase {
 		
 		
 		driver.findElement(By.xpath(OR.getProperty("Process"))).click();
-		
-		Thread.sleep(2000);
+
 		 Alert alert= wait.until(ExpectedConditions.alertIsPresent());
-		 Thread.sleep(2000);
+		
 		   System.out.println(alert.getText());
-		   //Thread.sleep(2000);
+		  
 		      Assert.assertTrue(alert.getText().contains("Account created successfully"));
 			  alert.accept();
 			  

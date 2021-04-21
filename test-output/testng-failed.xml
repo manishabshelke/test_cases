@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [RelativeXpathBasic]">
-  <test thread-count="5" name="VerifyCustList(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.VerifyCustList">
+      <class name="com.qa.testcases.CustomerLogin">
         <methods>
+          <include name="CustloginApp"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="isCustInList"/>
         </methods>
-      </class> <!-- com.qa.testcases.VerifyCustList -->
+      </class> <!-- com.qa.testcases.CustomerLogin -->
     </classes>
-  </test> <!-- VerifyCustList(failed) -->
-</suite> <!-- Failed suite [RelativeXpathBasic] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
